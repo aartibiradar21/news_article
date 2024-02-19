@@ -1,15 +1,16 @@
 import React from 'react';
 import News_box from './news_box';
 import Search_box from './search_box';
+import Footer from "./footer";
 
 const Page = () => {
   return (
   <>
     <div className="container-fluid">
-      <div className="box-1">
+      <div className="heading">
         <div className="col d-flex justify-content-center">
           <h1>NewsAPI</h1>
-           <div class="circle"></div>
+           <img className="circleimg" src="/Ellipse 1.png" alt="circleimg"></img>
           <h1>Org</h1>
         </div>
         
@@ -20,6 +21,7 @@ const Page = () => {
     </div>
     
      <News_box />
+     <Footer/>
     
      </>
   );
