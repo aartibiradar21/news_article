@@ -10,39 +10,24 @@
     width:940px;
 }
 
-.heading {
+.heading{
   border-bottom:1px solid black;
   margin-top:32px;
-  
-  
-}
+  font-family: "Iowan Old Style";
+  font-size: 84px;
+  font-style: normal;
+  font-weight: 400;
+ }
 .col{
-    font-family: "Iowan Old Style";
     margin-bottom:20px;
+    margin-top:50px;
     }
-
-
-
 .box{
-    height:388px;
+    /* height:388px; */
     margin-bottom: 20px;
     padding:20px;
+    /* border:1px solid black; */
     }
-
-.box-2{
-    border-top:1px solid black;
-    margin-top:3px;
-    margin-bottom:70px;
-    }
-
-
-.form {
-   margin: 10px;
-   text-align: center;
-   align-items: center;
-   margin-top:40px;
-}
-
 input {
   padding: 8px 0px 8px 30px;
   width: 250px;
@@ -52,6 +37,7 @@ input {
   background-position: left center; 
   font-family: "Iowan Old Style";
   font-size: 20px;
+  margin-top:40px;
 }
 
 button {
@@ -72,16 +58,14 @@ button:hover {
 .circleimg{
     width: 60.291px;
     height: 60.291px;
-    margin-top:20px;
+    margin-bottom:20px;
    }
-h1{
-    font-size:84px;
-    }
-.img2{
-    height:150px;
-    width:270px ;
-    
-    }
+.search{
+    margin-top:3px;
+    margin-bottom:50px;
+    border-top:1px solid black;}
+
+
 h2{
     font-family:"Inknut Antiqua";
     font-size: 24px;
@@ -108,9 +92,39 @@ h2{
     line-height: 140%; 
     letter-spacing: -0.4px;
     text-transform: uppercase;
+   
 }
+
+
+
+
 .footer{
     border:1px solid black;
     height:100px;
     width:auto;
-     }
+    font-family: "Inria Serif";
+    font-size: 16px;
+}
+
+
+.circleimg1{
+    width: 8.302px;
+    height: 8.302px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .footer-mobile {
+      padding: 10px 0; 
+    }
+  
+    .circleimg1 {
+      width: 30px; /* Adjust the size as needed for mobile */
+      height: 30px; /* Adjust the size as needed for mobile */
+    }
+  
+    .responsibility-text,
+    .external-sites-text {
+      margin-top: 3px; /* Adjust the margin for mobile */
+    }
+}

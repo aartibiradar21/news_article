@@ -1,29 +1,29 @@
 import React from 'react';
-import News_box from './news_box';
 import Search_box from './search_box';
-import Footer from "./footer";
+import Footer from './footer';
+import News_box from "./news_box";
+import news from "./news_data";
 
 const Page = () => {
   return (
-  <>
-    <div className="container-fluid">
-      <div className="heading">
-        <div className="col d-flex justify-content-center">
-          <h1>NewsAPI</h1>
-           <img className="circleimg" src="/Ellipse 1.png" alt="circleimg"></img>
-          <h1>Org</h1>
+    <>
+      <div className="container-fluid">
+        <div className="row justify-content-center heading">
+          <div className="col text-center">
+            <span>NewsAPI</span>
+            <img className="circleimg" src='/Ellipse 1.png' alt="circleimg" />
+            <span>Org</span>
+          </div>
         </div>
-        
+        <div className="row justify-content-center">
+          <div className="col text-center search">
+            <Search_box />
+          </div>
+        </div>
+        <News_box newsList={news} />
+        <Footer />
       </div>
-      < div className="box-2">
-       <Search_box/>
-      </div>
-    </div>
-    
-     <News_box />
-     <Footer/>
-    
-     </>
+    </>
   );
 };
 
